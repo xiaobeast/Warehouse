@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+    {% if latest_item %}
+        <u1>
+            {%  for item in latest_item %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </u1>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+</body>
+</html>
